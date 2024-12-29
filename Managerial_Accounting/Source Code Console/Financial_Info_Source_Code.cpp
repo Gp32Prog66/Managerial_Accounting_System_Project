@@ -5,6 +5,8 @@ using std::cin;
 using std::cout;
 using std::endl;
 using std::string;
+using std::getline;
+using std::istream;
 
 int main()
 {
@@ -40,11 +42,59 @@ int main()
 	double cmRatio; //Contribution Margin Ratio = Contribution Margin / Sales
 	double por; //Predetermined Overhead Rate = Estimated Total Overhead / Estimated Total Direct Labor Hours
 
+	//Options
+	int options;
+
 	
-
-
-
 	cout << "Welcome to the Managerial Accounting Program. " << endl;
 
+	//Display Options
+	cout << "1. Conversion Cost " << endl;
+	cout << "2. Contribution Margin Per Unit " << endl;
+	cout << "3. Margin " << endl;
+	cout << "4. Turnover " << endl;
+	cout << "5. Return on Investments " << endl;
+	cout << "6. Contribution Margin Ratio " << endl;
+	cout << "7. Predetermined Overhead Rate " << endl;
+
+	cout << "What do you want to calculate? " << endl;
+	cin >> options;
+
+	//getline(cin, options);
+
+	//Switch
+
+	switch (options)
+	{
+
+	case 1:
+	cout << "You've selected Conversion Cost" << endl;
+	break;
+	
+	case 2:
+cout << "You've selected Contribution Margin Per Unit" << endl;
+break;
+
+case 3:
+cout << "You've selected Margin " << endl;
+break;
+
+case 4:
+cout << "You've selected Turnover" << endl;
+break;
+
+case 5: 
+cout << "You've selected Return on Investments" << endl;
+break;
+
+case 6:
+cout << "You've selected Contribution Margin Ratio" << endl;
+break;
+
+case 7:
+cout << "You've selected Predetermined Overhead Rate" << endl;
+break;
+
+	}
 	return 0;
 }
